@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детская игровая комната</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffcc70, #ff8b94);
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #ff8b94;
+            color: white;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        .feature-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .feature-card h2 {
+            margin: 15px 0 10px;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .additional-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .additional-content h2 {
+            font-size: 2rem;
+            color: #ff8b94;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .additional-content p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            background: #ff8b94;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffcc70;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать в Детскую Игровую Комнату</h1>
+    <p>Волшебное место для веселья, творчества и обучения!</p>
+</header>
+
+<section class="features">
+    <div class="feature-card">
+        <img src="https://img.freepik.com/free-photo/colorful-playroom-with-slides-and-toys_2401436.jpg" alt="Игровая зона">
+        <h2>Увлекательная игровая зона</h2>
+        <p>Безопасная и веселая среда с игрушками для всех возрастов.</p>
+    </div>
+    <div class="feature-card">
+        <img src="https://img.freepik.com/free-photo/kids-drawing-together-in-playroom_2401438.jpg" alt="Творческие мастер-классы">
+        <h2>Творческие мастер-классы</h2>
+        <p>Вдохновляющие занятия для ваших малышей.</p>
+    </div>
+    <div class="feature-card">
+        <img src="https://img.freepik.com/free-photo/kids-celebrating-birthday-party_2401440.jpg" alt="Празднование дней рождения">
+        <h2>Дни рождения</h2>
+        <p>Сделайте день вашего ребенка особенным с нашими тематическими праздниками.</p>
+    </div>
+</section>
+
+<section class="additional-content">
+    <h2>Почему выбирают нас?</h2>
+    <p>Мы предлагаем широкий спектр развлекательных и образовательных мероприятий для детей всех возрастов.</p>
+    <p>Наша игровая комната оборудована современными безопасными материалами, чтобы каждый ребенок чувствовал себя комфортно.</p>
+    <p>Каждую неделю мы проводим новые тематические мероприятия, чтобы поддерживать интерес ваших детей.</p>
+</section>
+
+<section class="additional-content">
+    <h2>Галерея</h2>
+    <p>Здесь вы можете увидеть лучшие моменты из жизни нашей игровой комнаты:</p>
+    <div class="features">
+        <div class="feature-card">
+            <img src="https://img.freepik.com/free-photo/colorful-playroom-with-slides-and-toys_2401436.jpg" alt="Фото 1">
+            <p>Веселье в игровой зоне</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://img.freepik.com/free-photo/kids-drawing-together-in-playroom_2401438.jpg" alt="Фото 2">
+            <p>Творческая мастерская</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://img.freepik.com/free-photo/kids-celebrating-birthday-party_2401440.jpg" alt="Фото 3">
+            <p>Празднование дня рождения</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Детская Игровая Комната | <a href="#">Связаться с нами</a></p>
+</footer>
+
+<script>
+    document.querySelectorAll('.feature-card').forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.2}s`;
+    });
+</script>
+
+</body>
+</html>
